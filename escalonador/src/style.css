@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+body{
+    background-color: #EFEAEF;
+}
+
+
+
+
+.containerbody{
+    margin-left: 5vw ;
+    margin-top: 5vh;
+}
+.form-group{
+    margin-top: 8vh;
+}
+.form-group h2{
+    margin-bottom: 3vh;
+    font-family: "Asap", sans-serif;
+    font-weight: 500;
+    font-size: 2em;
+    color: #18085e;
+}
+
+h2{
+    position: relative;
+    padding-left: 20px;
+    line-height: 1.2;
+}
+
+h2::before{
+
+    content: "";
+    position:absolute;
+    left: 0;
+    top: -10px;
+    bottom: 0.5vh;
+    width: 5px;
+    background-color: #FF2E63;
+}
+h2 u{
+    font-family: "Asap", sans-serif;
+
+}
+
+
+.botao {
+    display: flex;
+    align-items: center;
+
+
+
+}
+
+
+
+.number-input {
+    color: #292929;
+    font-family: 'Asap', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    width: 90px;
+    height: 50px;
+    text-align: center;
+    border: 1px solid #474747;
+    border-radius: 5px;
+    margin: 0 10px;
+    background-color: transparent;
+
+
+}
+
+
+.button-add {
+    width: 40px;
+    height: 40px;
+    color: #4ab46e;
+    border: 2px solid #4ab46e ;
+    border-radius: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: transparent;
+    align-self: center;
+    font-size: 1rem;
+    line-height: 1;
+    padding: 1.2em;
+    text-align: center;
+    font-family: 'Asap', sans-serif;
+    font-weight: 700;
+  
+
+    &:focus {
+      color: #4ab46e;
+      outline: 0;
+    }
+    &:hover {
+        color: #fff;
+        outline: 0;
+    }
+}
+
+
+.bta {
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    &:hover {
+      box-shadow: 0 0 40px 40px #4ab46e inset;
+      border: 2px solid #409e60 ;
+    }
+}
+
+
+
+
+.btn {
+    box-sizing: border-box;
+    appearance: none;
+    background-color: #4ab46e;
+    border: 2px solid #50e281;
+    border-radius: 1em;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+    font-size: 1rem;
+    line-height: 1;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Asap', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    box-shadow: 0 3px 5px rgb(0, 0, 0);
+   
+}
+
+.btn:hover{
+    background-color: #3a9e5b;
+
+
+}
+
+.btn:active {
+    background-color: #3e8e41;
+    box-shadow: 0 2px #7c7c7c;
+    transform: translateY(4px);
+  }
+
+.divbutton{
+    margin-top: 100px;
+
+}
+  
+
+
+  
+  
+.button-rm {
+    width: 40px;
+    height: 40px;
+    background-color: #EF4B4B;
+    color: #EF4B4B;
+    border: 2px solid #EF4B4B;
+    border-radius: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 4px, 2px rgb(38, 0, 255);
+    box-sizing: border-box;
+    background-color: transparent;
+    align-self: center;
+    font-size: 1rem;
+    line-height: 1;
+    padding: 1.2em;
+    text-align: center;
+    font-family: 'Asap', sans-serif;
+    font-weight: 700;
+  
+    &:focus {
+        color: #EF4B4B;
+        outline: 0;
+      }
+    &:hover {
+        color: #fff;
+        outline: 0;
+    }
+}
+
+.btr {
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    &:hover {
+      box-shadow: 0 0 40px 40px #EF4B4B inset;
+      border: 2px solid #eb3939 ;
+    }
+}
+
+/* Tooltip Styles */
+[data-tooltip] {
+    position: relative;
+    cursor: help;
+  }
+  
+  [data-tooltip]:after {
+    display: none;
+    position: absolute;
+    top: 3em; /* Usando em para valores relativos */
+    padding: 0.5em;
+    border: solid 1px red;
+    border-radius: 3px;
+    left: 100%;
+    transform: translateX(-50%);
+    content: attr(data-tooltip);
+    background-color: #fff;
+    color: rgb(77, 77, 77);
+    font-weight: 400;
+    font-size: 0.5em;
+    z-index: 10;
+    min-width: 30vw;
+    max-width: 90vw; /* Limite a largura máxima do tooltip */
+    word-wrap: break-word; /* Quebra de palavra para ajustar ao tamanho da caixa */
+    white-space: normal; /* Permite quebra de linha */
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+  }
+  
+  [data-tooltip]:hover:after {
+    display: block;
+  }
+  
+  /* Media Queries para tamanhos de tela específicos */
+  @media (max-width: 768px) {
+    [data-tooltip]:after {
+      font-size: 0.7em; /* Tamanho de fonte menor para telas menores */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    [data-tooltip]:after {
+      font-size: 0.6em; /* Tamanho de fonte ainda menor para telas muito pequenas */
+    }
+  }
